@@ -1,0 +1,56 @@
+.navcontent {
+    text-decoration: none;
+    color: black;
+}
+
+.navcontent :hover {
+    color: rgba(94, 111, 137, 0.579);
+}
+
+.topbar {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.logo {
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.menu {
+    display: none;
+}
+
+.inbar {
+    display: flex;
+}
+
+.innav {
+    display: flex;
+}
+
+li a {
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .open {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .innav {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+    }
+}
+
+@media (min-width: 600px) {
+    
+    .menu {
+        display: none;
+    }
+}
